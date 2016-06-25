@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Lato);
 @import url(https://fonts.googleapis.com/css?family=Oswald:300);
 @import url(https://fonts.googleapis.com/css?family=Roboto+Mono);
+@import url(https://fonts.googleapis.com/css?family=Cabin);
 
 html {
   font-family: Oswald,"Lato", sans-serif;
@@ -86,6 +87,7 @@ li {
 .whiteborder {
   border: 2px solid white;
   animation: fadein 1s;
+  opacity:1;
   
 }
 
@@ -97,6 +99,7 @@ li {
   background-color:rgba(51, 153, 255,1);
   font-weight: bold;
   font-size:20px;
+  opacity:1;
 }
 
 li:hover {
@@ -240,11 +243,12 @@ ul.sub li:last-child a {
 }
 .content {
   background-color:black;
-  height:850px;
+  height:300px;
   width:1200px;
   font-size:30px;
   margin-left:15%;
   color:white;
+  
 }
 
 @media only screen and (max-width: 1300px) {
@@ -440,6 +444,7 @@ ul.sub li:last-child a {
   }
 }
 
+
 @keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
@@ -550,6 +555,7 @@ ul.sub li:last-child a {
   font-size: 2.55em;
   margin-top: -.9em;
   float:right;
+  line-height: none;
 }
 
 .next {
@@ -557,21 +563,74 @@ ul.sub li:last-child a {
   border:2px solid white;
   float:center;
   text-align: center;
-  margin-left:500px;
+  margin-left:650px;
   color:white;
   transition:margin-left 1s, width 1s;
   font-size: 22px;
   font-weight: bold;
-  animation:fadein 4s;
+  background-color:rgba(119, 51, 255,0);
+  animation:background-color 2s,fadein 4s;
   padding:20px;
 }
 
 .next:hover {
-  margin-left:0;
-  width:100%;
+  background-color:rgba(119, 51, 255,1);
+  margin-left:600px;
+  width:300px;
   
 }
 
 .info {
   color:white;
+  height:450px;
+  width:1400px;
+  margin-top:90px;
+  text-align: left;
+  margin-left:100px;
+}
+
+.info.endurance {
+  background:url("./images/endurance.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  animation:knock 1s, fadein 2s;
+}
+
+.info h1{
+  animation:fadein 2s, bounce 1s;
+}
+.info p {
+  animation:fadein 2s, bounce 1s;
+}
+
+.tickettype {
+  font-family: Cabin, sans-serif;
+  font-size:50px;
+  width:250px;
+  height:225px;
+  padding-top:25px;
+  display: inline-block;
+  border:4px solid white;
+  margin-top:30px;
+  margin-left: 132px;
+  margin-right: 20px;
+  
+  animation:knock 1s, fadein 2s;
+  text-align: center;
+  background:url("./images/adult.png");
+}
+
+.tickettype h2{
+  line-height: none;
+}
+
+.tickettype.child {
+  animation:knock 0.5s, fadein 2s;
+  background:url("./images/child.png");
+}
+
+.tickettype.elderly {
+  
+  animation:knock 1.5s, fadein 2s;
+  background:url("./images/elderly.png");
 }
