@@ -240,10 +240,11 @@ ul.sub li:last-child a {
 }
 .content {
   background-color:black;
-  height:900px;
+  height:850px;
   width:1200px;
   font-size:30px;
   margin-left:15%;
+  color:white;
 }
 
 @media only screen and (max-width: 1300px) {
@@ -551,3 +552,26 @@ ul.sub li:last-child a {
   float:right;
 }
 
+.next {
+  width:200px;
+  border:2px solid white;
+  float:center;
+  text-align: center;
+  margin-left:500px;
+  color:white;
+  transition:margin-left 1s, width 1s;
+  font-size: 22px;
+  font-weight: bold;
+  animation:fadein 4s;
+  padding:20px;
+}
+
+.next:hover {
+  margin-left:0;
+  width:100%;
+  
+}
+
+.info {
+  color:white;
+}
