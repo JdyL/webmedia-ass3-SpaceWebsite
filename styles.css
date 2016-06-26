@@ -2,9 +2,11 @@
 @import url(https://fonts.googleapis.com/css?family=Oswald:300);
 @import url(https://fonts.googleapis.com/css?family=Roboto+Mono);
 @import url(https://fonts.googleapis.com/css?family=Cabin);
+@import url(https://fonts.googleapis.com/css?family=Oxygen);
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web);
 
 html {
-  font-family: Oswald,"Lato", sans-serif;
+  font-family: Oswald,Lato,Cabin,Roboto Mono,sans-serif;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
   background-image:url("./images/bg.png");
@@ -20,7 +22,6 @@ html {
   -moz-box-shadow:    inset 0 0 500px #000000;
    -webkit-box-shadow: inset 0 0 500px #000000;
    box-shadow:         inset 0 0 500px #000000;
-
 }
 
 article,
@@ -39,8 +40,6 @@ summary {
   display: block;
 }
 
-/* A simple, css only, (some-what) responsive menu */
-
 body { 
   animation: fadein 6s;
   font-family:Roboto mono, sans-serif;
@@ -50,12 +49,10 @@ body {
   height: 100%;
   background-image: url('http://i.imgur.com/BiSmXaq.png'), url('http://i.imgur.com/XHuy0NJ.png'), url('http://i.imgur.com/okpRxJU.png');
   animation: snow 30s linear infinite;
-  
 }
  
 main {
   display: inline-block;
-  
 }
 
 a {
@@ -81,14 +78,12 @@ li {
   width:220px;
   animation: fadein 6s;
   transition: opacity 1s, background-color 1s, color 1s, width 0.5s;
-  
 }
 
 .whiteborder {
   border: 2px solid white;
   animation: fadein 1s;
   opacity:1;
-  
 }
 
 .current {
@@ -109,8 +104,6 @@ li:hover {
   opacity:1;
 }
 
-
-
 nav {
   background-color:black;
   text-align: center;
@@ -122,14 +115,12 @@ nav {
   border-bottom-left-radius: 8px;
   width:3px;
   float:left;
-  
 }
 
-/* prime */
+/* UL Elements */
 ul.primary li a {
   display: block;
   padding: 20px 30px;
-
 }
 
 ul.primary li:last-child a {
@@ -137,11 +128,9 @@ ul.primary li:last-child a {
 }
 
 ul.primary li a:hover {
-  
   color: #000;
 }
 
-/* subs */
 ul.sub {
   position: absolute;
   z-index: 200;
@@ -166,8 +155,6 @@ ul.sub li:last-child a {
   border-bottom: none;
 }
 
-
-
 .jumbotron {
   margin-left: 20px;
   margin-right:50px;
@@ -177,8 +164,8 @@ ul.sub li:last-child a {
 .container {
   margin-top:68%;
   animation: fadein 7s;
-  
 }
+
 .container  h1 {
   color:white;
   font-size: 120px;
@@ -202,8 +189,8 @@ ul.sub li:last-child a {
   color:white;
   opacity:0.8;
   font-size: 35px;
-   line-height: 15px;
-   transition:opacity 1s;
+  line-height: 15px;
+  transition:opacity 1s;
 }
 
 .container h2:hover {
@@ -225,7 +212,6 @@ ul.sub li:last-child a {
   margin-left:30%;
   padding: 10px;
   transition: margin-left 0.5s, width 0.5s, background-color 0.7s;
-  
 }
 
 .box:hover {
@@ -248,7 +234,6 @@ ul.sub li:last-child a {
   font-size:30px;
   margin-left:15%;
   color:white;
-  
 }
 
 @media only screen and (max-width: 1300px) {
@@ -326,10 +311,8 @@ ul.sub li:last-child a {
     50% {  }
     100% {
         background-position: 500px 1000px, 400px 400px, 300px 300px;
-        
     }
 }
-
 
 @-webkit-keyframes scale {
   0% {
@@ -339,6 +322,7 @@ ul.sub li:last-child a {
     -webkit-transform: scaleY(1);
   }
 }
+
 @-moz-keyframes scale {
   0% {
     -moz-transform: scaleY(0);
@@ -347,6 +331,7 @@ ul.sub li:last-child a {
     -moz-transform: scaleY(1);
   }
 }
+
 @keyframes scale {
   0% {
     -webkit-transform: scaleY(0);
@@ -363,6 +348,7 @@ ul.sub li:last-child a {
     transform: scaleY(1);
   }
 }
+
 @-webkit-keyframes bounce {
   0% {
     -webkit-transform: translateY(0);
@@ -374,6 +360,7 @@ ul.sub li:last-child a {
     -webkit-transform: translateY(0);
   }
 }
+
 @-moz-keyframes bounce {
   0% {
     -moz-transform: translateY(0);
@@ -385,6 +372,7 @@ ul.sub li:last-child a {
     -moz-transform: translateY(0);
   }
 }
+
 @keyframes bounce {
   0% {
     -webkit-transform: translateY(0);
@@ -408,6 +396,7 @@ ul.sub li:last-child a {
     transform: translateY(0);
   }
 }
+
 @-webkit-keyframes knock {
   0% {
     -webkit-transform: translateY(1em);
@@ -417,6 +406,7 @@ ul.sub li:last-child a {
     opacity: 1;
   }
 }
+
 @-moz-keyframes knock {
   0% {
     -moz-transform: translateY(1em);
@@ -426,6 +416,7 @@ ul.sub li:last-child a {
     opacity: 1;
   }
 }
+
 @keyframes knock {
   0% {
     -webkit-transform: translateY(1em);
@@ -443,7 +434,6 @@ ul.sub li:last-child a {
     opacity: 1;
   }
 }
-
 
 @keyframes fadein {
     from { opacity: 0; }
@@ -474,8 +464,6 @@ ul.sub li:last-child a {
     to   { opacity: 1; }
 }
 
-
-
 .content h1, h2 {
   font-family: sans-serif;
   text-transform: uppercase;
@@ -492,7 +480,6 @@ ul.sub li:last-child a {
   animation-fill-mode: forwards;
   color: white;
   float:left;
-  
 }
 .content h1 span {
   -webkit-transform-origin: bottom center;
@@ -511,6 +498,7 @@ ul.sub li:last-child a {
   padding: 0;
   display: inline-block;
 }
+
 .content h1 span:nth-child(1) {
   -webkit-animation: scale 0.1s linear;
   -moz-animation: scale 0.1s linear;
@@ -519,6 +507,7 @@ ul.sub li:last-child a {
   -moz-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
+
 .content h1 span:nth-child(2) {
   -webkit-animation: scale 0.2s linear 0.3s;
   -moz-animation: scale 0.2s linear 0.3s;
@@ -528,6 +517,7 @@ ul.sub li:last-child a {
   animation-fill-mode: forwards;
   font-size: 1.3em;
 }
+
 .content h1 span:nth-child(3) {
   -webkit-animation: scale 0.2s linear 0.4s;
   -moz-animation: scale 0.2s linear 0.4s;
@@ -577,7 +567,6 @@ ul.sub li:last-child a {
   background-color:rgba(119, 51, 255,1);
   margin-left:600px;
   width:300px;
-  
 }
 
 .info {
@@ -589,11 +578,50 @@ ul.sub li:last-child a {
   margin-left:100px;
 }
 
+.info.contact {
+  margin-left:200px;
+  margin-top:140px;
+  height:400px;
+  background:url("./images/tars.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  animation:knock 1s, fadein 2s;
+}
+
+.info.contact h2{
+  margin-top:80px;
+  margin-right:240px;
+  font-size:12px;
+  color:white;
+  opacity:0.8;
+  font-weight: bold;
+  font-family:Titillium Web,sans-serif;
+  float:right;
+}
+
+.info.about {
+  margin-top:120px;
+  margin-left:250px;
+  height:400px;
+  background-repeat: no-repeat;
+  background-position: right;
+  animation:knock 1s, fadein 2s;
+}
+
+.info.about h1 {
+  animation:bounce 1s;
+  font-family: Oxygen,sans-serif;
+  color:dodgerblue;
+  font-size:100px;
+  text-align: center;
+}
+
 .info.endurance {
   background:url("./images/endurance.png");
   background-repeat: no-repeat;
   background-position: right;
   animation:knock 1s, fadein 2s;
+  margin-left:200px;
 }
 
 .info h1{
@@ -614,7 +642,6 @@ ul.sub li:last-child a {
   margin-top:30px;
   margin-left: 132px;
   margin-right: 20px;
-  
   animation:knock 1s, fadein 2s;
   text-align: center;
   background:url("./images/adult.png");
@@ -629,8 +656,15 @@ ul.sub li:last-child a {
   background:url("./images/child.png");
 }
 
+.tickettype.child.text {
+  visibility:hidden;
+}
+
+.tickettype.child:hover .text {
+  visibility:visible;
+}
+
 .tickettype.elderly {
-  
   animation:knock 1.5s, fadein 2s;
   background:url("./images/elderly.png");
 }
